@@ -1,5 +1,5 @@
 ---
-to: <%= h.getProjectDir(name) %>/README.md
+to: <%= projectDir %>/README.md
 ---
 # <%= name %>
 *TODO*: Enter a project description here.

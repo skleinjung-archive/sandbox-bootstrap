@@ -1,3 +1,3 @@
 ---
-sh: "cd <%= h.getProjectDir(name) %> && hygen-add thrashplay-node-generators"
+sh: "cd <%= projectDir %> && hygen-add thrashplay-node-generators"
 ---

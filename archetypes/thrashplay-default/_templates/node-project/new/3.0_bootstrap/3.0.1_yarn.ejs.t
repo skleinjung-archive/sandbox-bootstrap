@@ -1,3 +1,3 @@
 ---
-sh: "cd <%= h.getProjectDir(name) %> && yarn"
+sh: "cd <%= projectDir %> && yarn"
 ---

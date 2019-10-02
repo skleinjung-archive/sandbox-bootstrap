@@ -1,5 +1,5 @@
 ---
-to: <%= h.getProjectDir(name) %>/package.json
+to: <%= projectDir %>/package.json
 ---
 {
   "name": "<%= name %>",
@@ -9,8 +9,7 @@ to: <%= h.getProjectDir(name) %>/package.json
   "devDependencies": {
     "app-root-path": "^2.2.1",
     "hygen": "^4.0.9",
-    "hygen-add": "^1.0.5",
-    "hygen-thrashplay-node-generators": "0.1.0",
+    "hygen-thrashplay-node-generators": "^0.1.27",
     "lodash": "^4.17.15",
     "node-fetch": "^2.6.0"
   }

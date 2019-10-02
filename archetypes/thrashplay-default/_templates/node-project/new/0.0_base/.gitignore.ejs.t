@@ -1,5 +1,5 @@
 ---
-to: <%= h.getProjectDir(name) %>/.gitignore
+to: <%= projectDir %>/.gitignore
 ---
 # Logs
 logs

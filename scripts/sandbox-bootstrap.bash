@@ -65,14 +65,23 @@ function process_arguments() {
 process_arguments $@
 
 set -x
-mkdir ${SANDBOX_NAME}
+mkdir ${SANDBOX_NAME} -p
 cd ${SANDBOX_NAME}
 
-mkdir .bootstrap && curl -L https://github.com/thrashplay/sandbox-bootstrap/tarball/master | tar -zxv -C .bootstrap --strip-components 1
+rm -rf .bootstrap
+rm -f hygen
+mkdir .bootstrap && curl -L https://github.com/thrashplay/sandbox-bootstrap/tarball/master | tar -zxv -C .bootstrap --strip-components 3 --wildcards --no-anchored 'archetypes/*'
+
+set +x
+cat <<EOF > hygen
+#!/bin/bash
+cd .bootstrap && hygen "\$@"
+EOF
+set -x
+chmod +x hygen
 
 cd .bootstrap
 yarn
-
 
 
 

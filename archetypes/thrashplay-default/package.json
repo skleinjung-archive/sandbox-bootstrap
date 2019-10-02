@@ -1,18 +1,15 @@
 {
-  "name": "sandbox-bootstrap",
+  "name": "sandbox-archetype-thrashplay-default",
   "version": "0.1.0",
-  "description": "Sandbox created via the sandbox-bootstrap project.",
-  "repository": "https://github.com/thrashplay/sandbox-bootstrap-template.git",
+  "description": "Default archetype for sandboxes created via the sandbox-bootstrap project.",
+  "repository": "https://github.com/thrashplay/sandbox-bootstrap.git",
   "author": "Sean Kleinjung <sean@thrashplay.com>",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "dependencies": {
     "app-root-path": "^2.2.1",
     "hygen": "^4.0.9",
     "lodash": "^4.17.15",
     "node-fetch": "^2.6.0"
-  },
-  "devDependencies": {
-    "hygen-add": "^1.0.5"
   }
 }
