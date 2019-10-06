@@ -6,6 +6,10 @@
   "author": "Sean Kleinjung <sean@thrashplay.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "buid": "echo No build script defined.",
+    "test": "echo No test script defined."
+  },  
   "dependencies": {
     "app-root-path": "^2.2.1",
     "hygen": "^4.0.9",

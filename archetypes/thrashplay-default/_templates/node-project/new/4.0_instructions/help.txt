@@ -1,0 +1,2 @@
+To setup lerna: `hygen lerna init`
+To add new package: `hygen lerna add-package --name <name> [--license <LICENSE>]`

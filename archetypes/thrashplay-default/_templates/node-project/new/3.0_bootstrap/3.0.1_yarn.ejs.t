@@ -1,3 +1,3 @@
 ---
-sh: "cd <%= projectDir %> && yarn"
+sh: "cd <%= projectDir%> && yarn"
 ---
